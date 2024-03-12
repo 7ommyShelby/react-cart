@@ -1,5 +1,5 @@
 main{
-
+    margin-bottom: 2rem;
 }
 nav{
     width: 100%;
@@ -9,10 +9,15 @@ nav{
     background-color: rgb(33, 170, 9);
 }
 .cart-items{
+    margin-top: 2rem;
     width: 800px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+.price{
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 hr{

@@ -26,6 +26,7 @@ const Redo = () => {
             if (ele.id == id) {
 
                 if (ele.count > 0) { ele.count = ele.count - 1; }
+               
             }
             return ele
         })
@@ -54,6 +55,14 @@ const Redo = () => {
     }, [cartitems])
 
 
+    // useEffect(() => {
+    //     let removal = cartitems.filter((e, idx) => {
+    //         if (e.count == 0) { return idx };
+    //     })
+    //     cartitems.splice(removal, 1);
+
+    // }, [cartitems])
+
 
     return (
         <>
@@ -64,10 +73,10 @@ const Redo = () => {
             </nav>
 
             <main>
-            <h1>Your Bag</h1>
+                <h1>Your Bag</h1>
                 <section className='cart-items'>
                     {
-                        cartitems.map((e) => {
+                        cartitems.map((e,idx) => {
                             return (<Item
                                 src={e.img_source}
                                 onClickHandler={onClickHandler}
