@@ -1,0 +1,24 @@
+main{
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(33, 170, 9);
+}
+section{
+    width: 800px;
+}
+
+hr{
+    height: 2px;
+}
+.icon{
+    font-size: 2rem
+}
+.total{
+    display: flex;
+    justify-content: space-around;
+}
