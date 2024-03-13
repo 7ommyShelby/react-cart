@@ -2,11 +2,12 @@
     display: flex;
     width: 75%;
     max-width: fit-content;
+    height: 100%;
 }
 
 img {
-    height: 100px;
-    width: 80px;
+    height: 100%;
+    width: 120px;
     margin-right: 10px;
 }
 
@@ -14,7 +15,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0  1rem;
+    height: 150px;
 }
 .quantity{
     font-weight: 600;

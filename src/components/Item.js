@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './item.css'
 import img from "./img/-original-imagyxrfvrzgveaw.webp"
 
-const Item = ({ name, src, price, quantity, onClickHandler, id, onClickHandlernegative}) => {
+const Item = ({ name, src, price, quantity, onClickHandler, id, onClickHandlernegative,remove}) => {
 
 
     return (
@@ -14,6 +14,9 @@ const Item = ({ name, src, price, quantity, onClickHandler, id, onClickHandlerne
                 <div className="box">
                     <h4>{name}</h4>
                     <span className='price'>₹{price}</span>
+                    <span onClick={()=>{
+                        return remove(id)
+                    }}>Remove</span>
                 </div>
             </div>
 
